@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:background="#F3EFEF"
+    android:orientation="vertical"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/shape_retangular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_margin="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jojo"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:src="@drawable/profile_pro" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/jojo"
+                android:text="JojoDio"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pp2023"
+                android:layout_marginLeft="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fork from SonTG/pp2023"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="25sp"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_black"
+                    android:scaleY="0.5"
+                    android:scaleX="0.5"
+                    android:layout_marginLeft="19sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="1sp"
+                    android:background="@drawable/shape_circle"
+                    android:backgroundTint="#3F51B5"
+                    android:scaleY="0.5"
+                    android:scaleX="0.5"
+                    android:src="@drawable/circle30" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Python"
+                    android:layout_marginTop="5sp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

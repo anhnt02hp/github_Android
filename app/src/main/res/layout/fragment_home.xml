@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:contentScrim="@color/color_selected1"
+            app:title="Home">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/gitbackground"
+                android:scaleType="centerCrop"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_send_24"
+        android:tint="@android:color/white"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_marginEnd="32dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#e4e4e4"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <!--        <TextView-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginStart="5dp"-->
+                <!--            android:layout_marginLeft="10sp"-->
+                <!--            android:layout_marginBottom="5dp"-->
+                <!--            android:text="Home"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textSize="40sp"-->
+                <!--            android:textStyle="bold" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/my_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginTop="20sp"
+                        android:text="My Work"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="25sp">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:background="@drawable/shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/l1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:radius="8dp"
+                            android:shape="rectangle">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:background="#4CAF50"
+                                android:padding="5sp"
+                                android:src="@drawable/issues" />
+
+                            <Button
+                                android:id="@+id/btn_issues"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_2"
+                                android:textAllCaps="false"
+                                android:text="Issues"
+                                android:gravity="left"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="20dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l2"
+                            android:layout_below="@id/l1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:background="#3F51B5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:padding="5sp"
+                                android:src="@drawable/pull_request" />
+
+                            <Button
+                                android:id="@+id/btn_pull_requests"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_2"
+                                android:textAllCaps="false"
+                                android:text="Pull Requests"
+                                android:gravity="left"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="20dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:background="@color/purple_500"
+                                android:padding="5sp"
+                                android:src="@drawable/discussion" />
+
+                            <Button
+                                android:id="@+id/btn_discussion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_2"
+                                android:textAllCaps="false"
+                                android:text="Discussion"
+                                android:gravity="left"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="20dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/l4"
+                            android:layout_below="@id/l3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:background="#8A93A6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:padding="5sp"
+                                android:src="@drawable/project" />
+
+                            <Button
+                                android:id="@+id/btn_project"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_2"
+                                android:textAllCaps="false"
+                                android:text="Project"
+                                android:gravity="left"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="20dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/l5"
+                            android:layout_below="@id/l4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:background="#2C2828"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:padding="5sp"
+                                android:src="@drawable/repository" />
+
+                            <Button
+                                android:id="@+id/btn_repositories"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_2"
+                                android:textAllCaps="false"
+                                android:text="Repositories"
+                                android:gravity="left"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="20dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/l6"
+                            android:layout_below="@id/l5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:background="#FF9800"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:padding="5sp"
+                                android:src="@drawable/organization" />
+
+                            <Button
+                                android:id="@+id/btn_organizations"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_2"
+                                android:textAllCaps="false"
+                                android:text="Organizations"
+                                android:gravity="left"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="20dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l6"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:background="#CAB819"
+                                android:padding="5sp"
+                                android:src="@drawable/star" />
+
+                            <Button
+                                android:id="@+id/btn_stared"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_2"
+                                android:textAllCaps="false"
+                                android:text="Stared"
+                                android:gravity="left"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="15dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="20dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Favorites"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginTop="40sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="25sp"/>
+                    <RelativeLayout
+                        android:background="@drawable/shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/favorites_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30sp"
+                            android:layout_marginTop="20sp"
+                            android:layout_marginRight="30sp"
+                            android:gravity="center"
+                            android:text="Add favorite repositories here to have quick access at any time, without having to search"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/favorites_text1"
+                            android:layout_marginLeft="45sp"
+                            android:layout_marginTop="20sp"
+                            android:layout_marginRight="45sp"
+                            android:layout_marginBottom="10sp"
+                            android:background="@drawable/shape_retangular"
+                            android:gravity="center"
+                            android:padding="10sp"
+                            android:text="Add Favorites"
+                            android:textColor="@color/color_selected"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/fragment_home1"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+

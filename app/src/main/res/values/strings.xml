@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="action_home">Home</string>
+    <string name="action_notification">Notification</string>
+    <string name="action_explore">Explore</string>
+    <string name="action_profile">Profile</string>
+</resources>

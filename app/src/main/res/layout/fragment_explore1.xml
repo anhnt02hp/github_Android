@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F3EFEF"
+    android:orientation="vertical"
+    android:layout_marginTop="20sp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:padding="3sp"
+                android:background="@drawable/shape_circle"
+                android:backgroundTint="#2196F3"
+                android:src="@drawable/user" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Kjeusy20 starred a repository"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/shape_circle"
+            android:backgroundTint="#E8BD3C"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/star_white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="5sp"
+                android:background="@drawable/shape_circle"
+                android:backgroundTint="#B1A538"
+                android:scaleY="0.8"
+                android:scaleX="0.8"
+                android:padding="2sp"
+                android:src="@drawable/user" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="40sp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="elmoallistair / google-it-support"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="40sp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Google it support professional certificate"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="5sp"
+                android:scaleY="0.5"
+                android:scaleX="0.5"
+                android:src="@drawable/star_black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="207"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/shape_circle"
+                android:backgroundTint="#4CAF50"
+                android:scaleY="0.5"
+                android:scaleX="0.5"
+                android:src="@drawable/circle30" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="40sp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="Shell"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="5sp"
+                android:scaleY="0.65"
+                android:scaleX="0.65"
+                android:src="@drawable/user" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="40sp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="11 contributors  >"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="5sp"
+                android:scaleY="0.5"
+                android:scaleX="0.5"
+                android:src="@drawable/star_black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/shape_retangular"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="☆ Star "
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:padding="3sp"
+                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/shape_circle"
+                    android:src="@drawable/user" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="giozang starred a repository"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/shape_circle"
+                android:backgroundTint="#E8BD3C"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:src="@drawable/star_white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="5sp"
+                    android:background="@drawable/shape_circle"
+                    android:backgroundTint="#B1A538"
+                    android:scaleY="0.8"
+                    android:scaleX="0.8"
+                    android:padding="2sp"
+                    android:src="@drawable/user" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="40sp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:text="qnblackcat / uYouPlus"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="40sp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="uYou+ is modified version of uYou (made by @MIRO92) with additional features and mainly made for non jailbroken users!"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:scaleY="0.5"
+                    android:scaleX="0.5"
+                    android:src="@drawable/star_black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="10sp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:text="5.648"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/shape_circle"
+                    android:backgroundTint="#4CAF50"
+                    android:scaleY="0.5"
+                    android:scaleX="0.5"
+                    android:src="@drawable/circle30" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="40sp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:text="Logos"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:scaleY="0.65"
+                    android:scaleX="0.65"
+                    android:src="@drawable/user" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="40sp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:text="239 contributors  >"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:scaleY="0.5"
+                    android:scaleX="0.5"
+                    android:src="@drawable/star_black" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/shape_retangular"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="☆ Star "
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

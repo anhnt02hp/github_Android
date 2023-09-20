@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/issuefrag"
+    tools:context=".IssueFragment"
+    tools:ignore="Instantiatable" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150px"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Các Spinner ở đây -->
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="200px"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_spinner" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="210px"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_spinner" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="220px"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spinner" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="210px"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:background="@drawable/bg_spinner" />
+
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="250px"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spinner" />
+
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="210px"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spinner" />
+
+            <!-- Thêm các Spinner khác tùy theo nhu cầu -->
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_scroll_view"
+        android:layout_marginTop="8dp">
+
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/btn_2"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>
