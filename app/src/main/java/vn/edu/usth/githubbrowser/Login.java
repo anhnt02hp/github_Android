@@ -29,11 +29,10 @@ public class Login extends AppCompatActivity {
                 final String username = tvUsername.getText().toString();
                 final String password = tvPassword.getText().toString();
 
-//                Log.d("DEBUG", username);
-//                Log.d("DEBUG", password);
+
 
                 if (username.equals("admin") && password.equals("123")) {
-//                    Log.d("DEBUG", "Correct");
+
                     Toast.makeText(getApplicationContext(), "Login successfully",Toast.LENGTH_LONG).show();
                     Intent signIn = new Intent(Login.this, MainActivity.class);
                     startActivity(signIn);

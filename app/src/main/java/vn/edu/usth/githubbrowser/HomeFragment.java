@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 
 public class HomeFragment extends Fragment {
 
-    Button btnIssues, btnPullRequests, btnDiscussion, btnProject, btnRepositories, btnOrganizations, btnStared;
+    Button btnIssues, btnPullRequests, btnDiscussion, btnProject, btnRepositories, btnOrganizations, btnStared, btnCreateIssues;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -23,10 +23,11 @@ public class HomeFragment extends Fragment {
         Button issues = view.findViewById(R.id.btn_issues);
         Button pullRequests = view.findViewById(R.id.btn_pull_requests);
         Button discussion = view.findViewById(R.id.btn_discussion);
-        Button project = view.findViewById(R.id.btn_project);
+        Button project = view.findViewById(R.id.btn_projects);
         Button repositories = view.findViewById(R.id.btn_repositories);
         Button organizations = view.findViewById(R.id.btn_organizations);
         Button stared = view.findViewById(R.id.btn_stared);
+        Button createissues = view.findViewById(R.id.btn_add);
 
         issues.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +40,7 @@ public class HomeFragment extends Fragment {
         pullRequests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnPullRequests = new Intent(getActivity(), IssueFragment.class);
+                Intent btnPullRequests = new Intent(getActivity(), PullRequestsFragment.class);
                 startActivity(btnPullRequests);
             }
         });
@@ -47,7 +48,7 @@ public class HomeFragment extends Fragment {
         discussion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnDiscussion = new Intent(getActivity(), IssueFragment.class);
+                Intent btnDiscussion = new Intent(getActivity(), DiscussionFragment.class);
                 startActivity(btnDiscussion);
             }
         });
@@ -55,7 +56,7 @@ public class HomeFragment extends Fragment {
         project.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnProject = new Intent(getActivity(), IssueFragment.class);
+                Intent btnProject = new Intent(getActivity(), ProjectFragment.class);
                 startActivity(btnProject);
             }
         });
@@ -63,7 +64,7 @@ public class HomeFragment extends Fragment {
         repositories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnRepositories = new Intent(getActivity(), IssueFragment.class);
+                Intent btnRepositories = new Intent(getActivity(), RepositoriesFragment.class);
                 startActivity(btnRepositories);
             }
         });
@@ -71,7 +72,7 @@ public class HomeFragment extends Fragment {
         organizations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnOrganizations = new Intent(getActivity(), IssueFragment.class);
+                Intent btnOrganizations = new Intent(getActivity(), OrganizationsFragment.class);
                 startActivity(btnOrganizations);
             }
         });
@@ -79,8 +80,16 @@ public class HomeFragment extends Fragment {
         stared.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnStared = new Intent(getActivity(), IssueFragment.class);
+                Intent btnStared = new Intent(getActivity(), StaredFragment.class);
                 startActivity(btnStared);
+            }
+        });
+
+        createissues.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent btnCreateIssues = new Intent(getActivity(), CreateIssuesFragment.class);
+                startActivity(btnCreateIssues);
             }
         });
 

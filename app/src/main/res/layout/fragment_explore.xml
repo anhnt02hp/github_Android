@@ -39,17 +39,15 @@
         android:layout_marginEnd="32dp"/>
 
     <androidx.core.widget.NestedScrollView
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <ScrollView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:background="#F3EFEF"
                 android:orientation="vertical"
                 android:layout_height="match_parent">
                 <TextView
@@ -76,23 +74,21 @@
                         android:orientation="horizontal"
                         android:radius="8dp"
                         android:shape="rectangle">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:background="#673AB7"
-                            android:padding="5sp"
-                            android:src="@drawable/trending" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
+
+                        <Button
+                            android:id="@+id/btn_trending_repositores"
+                            android:drawableLeft="@drawable/btn_13"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="10sp"
-                            android:text="Trending Repositores"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="20dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="start|center_vertical"
+                            android:paddingTop="10dp"
+                            android:text="   Trending Repositores"
+                            android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
@@ -103,22 +99,21 @@
                         android:orientation="horizontal"
                         android:radius="8dp"
                         android:shape="rectangle">
-                        <ImageView
-                            android:layout_width="wrap_content"
+
+                        <Button
+                            android:id="@+id/btn_organizations"
+                            android:drawableLeft="@drawable/btn_14"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="20sp"
-                            android:layout_marginTop="10sp"
-                            android:layout_marginRight="10sp"
-                            android:layout_marginBottom="10sp"
-                            android:background="#AF2152"
-                            android:padding="5sp"
-                            android:src="@drawable/happy" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="10sp"
-                            android:text="Awesome Lists"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="start|center_vertical"
+                            android:paddingTop="10dp"
+                            android:text="  Awesome Lists"
+                            android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
                     </LinearLayout>
@@ -268,6 +263,7 @@
                             android:background="#F3EFEF"
                             android:padding="6sp"
                             android:src="@drawable/star_gold" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

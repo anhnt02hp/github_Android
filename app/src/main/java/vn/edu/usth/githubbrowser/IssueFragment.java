@@ -17,7 +17,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class IssueFragment extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Spinner spinner;
