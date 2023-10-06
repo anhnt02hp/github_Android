@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.MainActivity">
+    tools:context=".fragment.subs.SearchFragment">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -27,19 +27,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Search"
+                android:textSize="25dp"
                 android:inputType="text"
-                android:maxLines="1"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
-            android:id="@+id/btn_search"
+            android:id="@+id/btn_searching"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
             android:layout_marginEnd="16dp"
             android:alpha="0.4"
             android:src="@drawable/ic_search" />
+
     </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView

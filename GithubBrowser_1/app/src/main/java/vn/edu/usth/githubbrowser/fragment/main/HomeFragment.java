@@ -28,6 +28,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+
         Button issues = view.findViewById(R.id.btn_issues);
         Button pullRequests = view.findViewById(R.id.btn_pull_requests);
         Button discussion = view.findViewById(R.id.btn_discussion);
@@ -102,6 +103,7 @@ public class HomeFragment extends Fragment {
                 startActivity(btnSearch);
             }
         });
+
 
         return view;
     }

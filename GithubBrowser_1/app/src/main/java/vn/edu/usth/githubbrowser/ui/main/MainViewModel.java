@@ -1,11 +1,9 @@
 package vn.edu.usth.githubbrowser.ui.main;
 
 import android.util.Log;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-
 import vn.edu.usth.githubbrowser.api.search.Api;
 import vn.edu.usth.githubbrowser.api.search.RetrofitClient;
 import vn.edu.usth.githubbrowser.data.User;

@@ -18,6 +18,8 @@
         <activity
             android:name=".signin.SignIn"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,6 +36,7 @@
             android:name=".ui.main.MainActivity"
             android:exported="true">
         </activity>
+
 
         <activity
             android:name=".fragment.main.IssueFragment"
@@ -79,23 +82,18 @@
         <activity
             android:name=".fragment.subs.SettingsFragment"
             android:exported="true">
-
-        </activity>
-
-        <activity
-            android:name=".api.repos.ApiActivity"
-            android:exported="true">
-        </activity>
-
-        <activity
-            android:name=".api.repos.DetailActivity"
-            android:exported="true">
         </activity>
 
         <activity
             android:name=".fragment.subs.SearchFragment"
             android:exported="true">
         </activity>
+
+
+
+
+
+
 
 
     </application>
