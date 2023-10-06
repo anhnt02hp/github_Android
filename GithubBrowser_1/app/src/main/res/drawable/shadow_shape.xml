@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Hình nền trắng -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+
+    <item android:bottom="5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="1dp"
+                android:color="@android:color/transparent" /> <!-- Màu của đường viền -->
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+
+    <!-- Đổ bóng mờ mờ màu đen -->
+    <item android:left="0dp" android:right="0dp" android:top="0dp" android:bottom="5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="0dp" />
+            <corners android:radius="30dp" />
+            <padding android:bottom="5dp" />
+        </shape>
+    </item>
+
+</layer-list>

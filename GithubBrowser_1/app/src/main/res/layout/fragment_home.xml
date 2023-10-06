@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/color_selected1"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="Home">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gitbackground" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btn_15"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|right" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/my_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginBottom="10sp"
+                        android:text="My Work"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/l1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:radius="8dp"
+                            android:shape="rectangle">
+
+                            <Button
+                                android:id="@+id/btn_issues"
+                                android:drawableLeft="@drawable/btn_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginRight="20dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="start|center_vertical"
+                                android:text="   Issues"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l2"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l1"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/btn_pull_requests"
+                                android:drawableLeft="@drawable/btn_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="start|center_vertical"
+                                android:text="   Pull Requests"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l2"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/btn_discussion"
+                                android:drawableLeft="@drawable/btn_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginRight="20dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="start|center_vertical"
+                                android:text="   Discussions"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l3"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_projects"
+                                android:drawableStart="@drawable/btn_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="7dp"                                android:layout_marginRight="20dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="start|center_vertical"
+                                android:text="   Projects"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l4"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_repositories"
+                                android:drawableLeft="@drawable/btn_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginRight="20dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="start|center_vertical"
+                                android:text="   Repositories"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l5"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_organizations"
+                                android:drawableLeft="@drawable/btn_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="7dp"                                android:layout_marginRight="20dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="start|center_vertical"
+                                android:text="   Organization"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l6"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_stared"
+                                android:drawableLeft="@drawable/btn_12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginBottom="7dp"                                android:layout_marginRight="20dp"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="start|center_vertical"
+                                android:text="   Strarred"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="40sp"
+                        android:layout_marginBottom="10sp"
+                        android:text="Favorites"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/favorites_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30sp"
+                            android:layout_marginTop="20sp"
+                            android:layout_marginRight="30sp"
+                            android:gravity="center"
+                            android:text="Add favorite repositories here to have quick access at any time, without having to search"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/favorites_text1"
+                            android:layout_marginLeft="45sp"
+                            android:layout_marginTop="20sp"
+                            android:layout_marginRight="45sp"
+                            android:layout_marginBottom="10sp"
+                            android:background="@drawable/shape"
+                            android:gravity="center"
+                            android:padding="10sp"
+                            android:text="Add Favorites"
+                            android:textColor="@color/color_selected"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/fragment_home1" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+

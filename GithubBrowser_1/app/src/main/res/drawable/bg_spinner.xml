@@ -1,0 +1,15 @@
+<!-- res/drawable/arrow_right.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape for the Spinner -->
+    <item>
+        <shape>
+            <stroke android:color="@color/black" android:width="1dp"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    <!-- Arrow on the right -->
+    <item android:left="10dp"
+        android:drawable="@drawable/arrow"
+        android:gravity="center_vertical|right">
+    </item>
+</layer-list>

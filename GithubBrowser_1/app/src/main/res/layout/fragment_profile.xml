@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/btn_setting"
+            android:background="@drawable/ic_share" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_5" />
+
+    </RelativeLayout>
+
+<!--============================-->
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/jojo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:src="@drawable/profile_pro" />
+
+
+            <TextView
+                android:id="@+id/jojotext"
+                android:layout_toRightOf="@id/jojo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:layout_marginLeft="10sp"
+                android:text="Jotaro Kujo"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jojotext"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/jojo"
+                android:text="JojoDio"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+<!--    =================================================================-->
+
+    <!--    =================================================================-->
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/my_work"
+            android:background="@drawable/shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="5sp"
+                    android:scaleX="0.65"
+                    android:scaleY="0.65"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3sp"
+                    android:layout_marginTop="10sp"
+                    android:gravity="left"
+                    android:text="7 following"
+                    android:textColor="#7C7979"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_below="@id/following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:radius="8dp"
+                android:shape="rectangle">
+
+                <Button
+                    android:id="@+id/btn_repositories_profiles"
+                    android:drawableLeft="@drawable/btn_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"                    android:layout_marginRight="20dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="start|center_vertical"
+                    android:text="   Repositories"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_below="@id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:radius="8dp"
+                android:shape="rectangle">
+
+                <Button
+                    android:id="@+id/btn_starred"
+                    android:drawableLeft="@drawable/btn_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"                    android:layout_marginRight="20dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="start|center_vertical"
+                    android:text="   Strarred"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:radius="8dp"
+                android:shape="rectangle">
+
+                <Button
+                    android:id="@+id/btn_organizations"
+                    android:drawableLeft="@drawable/btn_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="start|center_vertical"
+                    android:text="   Organization"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    <!--================================================================-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="5sp"
+                android:scaleY="0.65"
+                android:scaleX="0.65"
+                android:src="@drawable/star_black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:textColor="#7C7979"
+                android:textSize="15sp"
+                android:text="Popular"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/fragment_profile1"></include>
+
+
+
+
+
+
+</LinearLayout>

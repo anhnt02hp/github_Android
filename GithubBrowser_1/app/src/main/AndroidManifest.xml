@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GithubBrowser"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".signin.SignIn"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".signin.Login"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".fragment.main.IssueFragment"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".fragment.main.DiscussionFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".fragment.subs.ProjectFragment"
+            android:exported="true">
+
+        </activity>
+
+
+
+        <activity android:name=".fragment.subs.PullRequestsFragment"
+            android:exported="true">
+
+        </activity>
+
+
+        <activity android:name=".fragment.subs.RepositoriesFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".fragment.subs.OrganizationsFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name=".fragment.subs.StaredFragment"
+            android:exported="true">
+
+        </activity>
+
+
+        <activity
+            android:name=".fragment.subs.SettingsFragment"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".api.repos.ApiActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".api.repos.DetailActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".fragment.subs.SearchFragment"
+            android:exported="true">
+        </activity>
+
+
+    </application>
+
+</manifest>
