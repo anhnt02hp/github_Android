@@ -1,4 +1,4 @@
-package vn.edu.usth.githubbrowser.fragment.main;
+package vn.edu.usth.githubbrowser.fragment.subs;
 
 import androidx.appcompat.app.AppCompatActivity;
 

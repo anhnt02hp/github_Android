@@ -23,14 +23,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import vn.edu.usth.githubbrowser.R;
-import vn.edu.usth.githubbrowser.data.Movie;
-import vn.edu.usth.githubbrowser.data.MovieAdapter;
+import vn.edu.usth.githubbrowser.data.Repositories;
+import vn.edu.usth.githubbrowser.data.RepositoriesAdapter;
 
 public class ApiActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private RequestQueue requestQueue;
-    private List<Movie> movieList;
+    private List<Repositories> movieList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,19 +50,19 @@ public class ApiActivity extends AppCompatActivity {
         try_conn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fetchMovies();
+                fetchRepo();
             }
         });
 
 
-        fetchMovies();
+        fetchRepo();
 
 
     }
 
-    private void fetchMovies() {
+    private void fetchRepo() {
 
-        String url = "https://run.mocky.io/v3/16519a30-ea26-4c5f-99fe-883d9dfa8ebb";
+        String url = "https://run.mocky.io/v3/5aafd4f1-e9a3-4c24-8c97-5e7844bd4cf2";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONArray>() {
@@ -77,13 +77,13 @@ public class ApiActivity extends AppCompatActivity {
                         String poster = jsonObject.getString("poster");
                         Double rating = jsonObject.getDouble("rating");
 
-                        Movie movie = new Movie(title , poster , overview , rating);
+                        Repositories movie = new Repositories(title , poster , overview , rating);
                         movieList.add(movie);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
 
-                    MovieAdapter adapter = new MovieAdapter(ApiActivity.this , movieList);
+                    RepositoriesAdapter adapter = new RepositoriesAdapter(ApiActivity.this , movieList);
 
                     recyclerView.setAdapter(adapter);
                 }

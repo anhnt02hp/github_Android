@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface Api {
     @GET("search/users")
-    @Headers("Authorization: token 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")
+    @Headers("Authorization: token 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")
     Call<UserResponse> getSearchUsers(
             @Query("q") String query
     );

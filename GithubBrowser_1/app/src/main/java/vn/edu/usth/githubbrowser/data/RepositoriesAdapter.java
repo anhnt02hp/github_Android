@@ -20,12 +20,12 @@ import java.util.List;
 import vn.edu.usth.githubbrowser.R;
 import vn.edu.usth.githubbrowser.api.repos.DetailActivity;
 
-public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder> {
+public class RepositoriesAdapter extends RecyclerView.Adapter<RepositoriesAdapter.MovieHolder> {
 
     private Context context;
-    private List<Movie> movieList;
+    private List<Repositories> movieList;
 
-    public MovieAdapter(Context context , List<Movie> movies){
+    public RepositoriesAdapter(Context context , List<Repositories> movies){
         this.context = context;
         movieList = movies;
     }
@@ -39,7 +39,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
     @Override
     public void onBindViewHolder(@NonNull MovieHolder holder, int position) {
 
-        Movie movie = movieList.get(position);
+        Repositories movie = movieList.get(position);
         holder.rating.setText(movie.getRating().toString());
         holder.title.setText(movie.getTitle());
         holder.overview.setText(movie.getOverview());

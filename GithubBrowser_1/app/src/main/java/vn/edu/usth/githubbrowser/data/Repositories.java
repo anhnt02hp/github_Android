@@ -1,11 +1,11 @@
 package vn.edu.usth.githubbrowser.data;
 
-public class Movie {
+public class Repositories {
 
     private String title , poster , overview;
     private Double rating;
 
-    public Movie(String title , String poster , String overview , Double rating){
+    public Repositories(String title , String poster , String overview , Double rating){
         this.title = title;
         this.poster = poster;
         this.overview = overview;

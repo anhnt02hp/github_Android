@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import vn.edu.usth.githubbrowser.fragment.main.ExploreFragment;
 import vn.edu.usth.githubbrowser.fragment.main.HomeFragment;
 import vn.edu.usth.githubbrowser.fragment.subs.NotificationFragment;
-import vn.edu.usth.githubbrowser.fragment.subs.ProfileFragment;
+import vn.edu.usth.githubbrowser.fragment.main.ProfileFragment;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 

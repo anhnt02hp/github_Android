@@ -19,7 +19,6 @@
             android:name=".signin.SignIn"
             android:exported="true">
 
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,8 +37,10 @@
         </activity>
 
 
+
+
         <activity
-            android:name=".fragment.main.IssueFragment"
+            android:name=".fragment.subs.IssueFragment"
             android:exported="true">
         </activity>
 
@@ -89,7 +90,21 @@
             android:exported="true">
         </activity>
 
+        <activity android:name=".api.repos.ApiActivity"
+            android:exported="true">
+        </activity>
 
+        <activity android:name=".api.repos.DetailActivity"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".api.search.RetrofitClient"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".api.search.Api"
+            android:exported="true">
+        </activity>
 
 
 

@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import vn.edu.usth.githubbrowser.api.repos.ApiActivity;
+import vn.edu.usth.githubbrowser.fragment.subs.IssueFragment;
 import vn.edu.usth.githubbrowser.fragment.subs.OrganizationsFragment;
 import vn.edu.usth.githubbrowser.fragment.subs.ProjectFragment;
 import vn.edu.usth.githubbrowser.fragment.subs.PullRequestsFragment;
@@ -27,7 +28,6 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-
 
         Button issues = view.findViewById(R.id.btn_issues);
         Button pullRequests = view.findViewById(R.id.btn_pull_requests);
